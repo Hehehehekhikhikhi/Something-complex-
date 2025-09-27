@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Glassmorphic Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MySite</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Complex Website</h1>
+      <p>Experience glassmorphism, interactivity, and modern design.</p>
+      <button class="btn" onclick="scrollToSection('dashboard')">Explore</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      This is a demo of a complex front-end website featuring glass effects, animations,
+      a dashboard, and dynamic content updates.
+    </p>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard">
+    <h2>Interactive Dashboard</h2>
+    <div class="dashboard-grid">
+      <div class="card">
+        <h3>Live Clock</h3>
+        <p id="clock"></p>
+      </div>
+      <div class="card">
+        <h3>Random Quote</h3>
+        <p id="quote">Click the button for inspiration.</p>
+        <button onclick="getQuote()">New Quote</button>
+      </div>
+      <div class="card">
+        <h3>Task Manager</h3>
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+      </div>
+      <div class="card">
+        <h3>Weather Widget</h3>
+        <p>Demo Weather: <span id="weather">☀️ Sunny, 25°C</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MySite | Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
